@@ -1,0 +1,55 @@
+@import '/src/styles/variables';
+
+.header-main {
+  padding: 30px 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9;
+
+  .header-links {
+    justify-content: flex-end;
+    gap: 60px;
+
+    a {
+      font-size: 16px;
+      line-height: 19px;
+      color: $text;
+      font-weight: 500;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
+    .button {
+      padding: 14px;
+      min-width: 160px;
+      font-size: 16px;
+    }
+
+    .nav-hamburger {
+      position: relative;
+      width: 30px;
+      height: 15px;
+      padding: 0;
+
+      &:before,
+      &:after {
+        position: absolute;
+        top: 0;
+        background-color: $black;
+        height: 2px;
+        width: 60%;
+        content: '';
+        right: 0;
+      }
+
+      &:before {
+        top: 9px;
+        width: 100%;
+      }
+    }
+  }
+}
