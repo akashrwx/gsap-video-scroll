@@ -78,6 +78,10 @@ function Homepage() {
           </div>
         </div>
       </section>
+
+      <div className="container">
+        <img src="/img/hero002.webp" alt="" />
+      </div>
     </Layout>
   );
 }
