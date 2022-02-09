@@ -71,6 +71,9 @@ function Homepage() {
                 </div>
               </div>
             </div>
+            <div className="container">
+        <img src="/img/hero002.webp" alt="" />
+      </div>
 
             <div className="hero-anim">
               <video src="/video/hero-animation.mp4" ref={heroVideo} muted />
@@ -79,9 +82,7 @@ function Homepage() {
         </div>
       </section>
 
-      <div className="container">
-        <img src="/img/hero002.webp" alt="" />
-      </div>
+     
     </Layout>
   );
 }
