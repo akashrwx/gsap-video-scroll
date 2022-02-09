@@ -8,7 +8,7 @@ function Homepage() {
   
   return (
     <Layout>
-      <section className="hero-scroll" ref={heroSection}>
+      <section className="hero-scroll">
         <div className="hero-section">
           <div className="fixed-hero">
             <div className="container relative">
@@ -22,7 +22,7 @@ function Homepage() {
                   <span>SCROLL DOWN</span>
                 </div>
               </div>
-              <div className="hero-content" ref={heroContentOne}>
+              <div className="hero-content">
                 <div className="content text-center">
                   <div className="masked-item">
                     <h1>
