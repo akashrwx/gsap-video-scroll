@@ -1,8 +1,11 @@
 import React from 'react';
-
+import Layout from '../components/Layout';
 import '../styles/homepage.scss';
 
 
+
+function Homepage() {
+  
   return (
     <Layout>
       <section className="hero-scroll" ref={heroSection}>
