@@ -1,44 +1,8 @@
-import React, { useRef, useLayoutEffect, useEffect } from 'react';
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
-import Layout from '../components/Layout';
+import React from 'react';
+
 import '../styles/homepage.scss';
 
-gsap.registerPlugin(ScrollTrigger);
 
-function Homepage() {
-  const heroVideo = useRef();
-  const heroSection = useRef();
-  const heroContentOne = useRef();
-
-  useEffect(() => {
-    heroVideo.current.currentTime = 0;
-  }, [heroVideo]);
-
-  const tl = useRef();
-
-  useLayoutEffect(() => {
-    tl.current = gsap
-      .timeline({
-        defaults: { duration: 1 },
-        scrollTrigger: {
-          trigger: heroSection.current,
-          start: 'top top',
-          end: 'bottom bottom',
-          scrub: true,
-        },
-      })
-
-      .fromTo(
-        heroVideo.current,
-        {
-          currentTime: 0,
-        },
-        {
-          currentTime: 13,
-        },
-      );
-  }, [tl]);
   return (
     <Layout>
       <section className="hero-scroll" ref={heroSection}>
@@ -75,9 +39,7 @@ function Homepage() {
         <img src="/img/hero002.webp" alt="" />
       </div>
 
-            <div className="hero-anim">
-              <video src="/video/hero-animation.mp4" ref={heroVideo} muted />
-            </div>
+           
           </div>
         </div>
       </section>
